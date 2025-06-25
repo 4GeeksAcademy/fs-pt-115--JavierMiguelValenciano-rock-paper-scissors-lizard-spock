@@ -11,7 +11,7 @@ const ComputerChoice = () => {
 const CheckingWinner = (humanChoice) => {
     let computer = ComputerChoice();
 
-    let result = "";
+    let result = "Sorry loser !! Try again !!";
 
     console.log("You choose: " + humanChoice);
     console.log("Computer say: " + computer);
@@ -27,10 +27,6 @@ const CheckingWinner = (humanChoice) => {
         case humanChoice === "lizard" && (computer === "paper" || computer === "spock"):
         case humanChoice === "spock" && (computer === "scissors" || computer === "rock"):
             result = "Congrats you're the winner !!";
-            break;
-
-        default:
-            result = "Sorry loser !! Try again !!";
             break;
     }
 
